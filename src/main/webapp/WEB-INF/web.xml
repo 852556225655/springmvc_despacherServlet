@@ -1,0 +1,22 @@
+
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+        <servlet-name>ItczMvc</servlet-name>
+        <servlet-class>com.wingstudio.servlet.ItczDispatcherServlet</servlet-class>
+        <!--不加这个会在接受一个请求后再注入-->
+        <load-on-startup>1</load-on-startup>
+        <init-param>
+            <param-name>ItczContextConfigLocation</param-name>
+            <param-value>ItczMvc.xml</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ItczMvc</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+

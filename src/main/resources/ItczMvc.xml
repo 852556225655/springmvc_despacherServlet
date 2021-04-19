@@ -1,0 +1,4 @@
+<beans>
+    <packageScan package = "com"> </packageScan>
+
+</beans>
